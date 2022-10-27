@@ -1,0 +1,106 @@
+@import "src/assets/styles/mixin/_mixin.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 660px;
+  font-weight: 500;
+  background: url("/assets/images/snow-desktop.png");
+  background-position: bottom left;
+  padding-bottom: 25px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    @include onDesktop {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__combine {
+    position: relative;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    @include onDesktop {
+      grid-column: 2/3;
+    }
+
+    &-car {
+      position: absolute;
+      width: 364px;
+      height: 248px;
+      bottom: 20px;
+      transform: translateX(-30px);
+      z-index: 1;
+
+      @include onDesktop {
+        width: 632px;
+        height: 431px;
+        bottom: -10px;
+      }
+    }
+    &-tree {
+      position: absolute;
+      width: 310px;
+      height: 335px;
+      transform: translateX(-100px);
+      z-index: 0;
+      bottom: 50px;
+
+      @include onDesktop {
+        width: 558px;
+        height: 602px;
+        transform: translateX(-250px);
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include onDesktop {
+      font-size: 40px;
+      text-align: left;
+      width: 580px;
+    }
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+
+    @include onDesktop {
+      align-items: flex-start;
+      grid-column: 3/5;
+    }
+  }
+  &__button {
+    background: #d8271c;
+    border-radius: 50px;
+    padding: 0 60px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    z-index: 2;
+
+    &:hover{
+      cursor: pointer;
+      background: transparent;
+      color: #d8271c;
+      border: 2px solid rgb(255, 0, 0);
+    }
+  }
+}

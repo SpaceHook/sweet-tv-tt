@@ -1,0 +1,158 @@
+@import "src/assets/styles/mixin/_mixin.scss";
+
+.header {
+  height: 100vh;
+  margin-bottom: 85px;
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding-top: 30px;
+    background-image: url("/assets/images/background.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+
+    @include onDesktop {
+      padding-top: 50px;
+      background-position: center;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 120%;
+    padding: 0 80px;
+
+    &-important {
+      padding: 5px 3px 3px 9px;
+      background-color: #e32819;
+      padding: 0 1px;
+    }
+
+    &-connect {
+      transform: rotate(-1.84deg);
+      font-weight: 750;
+      font-size: 18px;
+      line-height: 150%;
+
+      @include onDesktop {
+        font-size: 37px;
+      }
+    }
+
+    &-get {
+      transform: rotate(-1.54deg);
+      font-weight: 750;
+      font-size: 30px;
+      margin-bottom: 10px;
+
+      @include onDesktop {
+        font-size: 55px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-iphone {
+      transform: rotate(-2.28deg);
+      font-weight: 800;
+      font-size: 24px;
+      margin-bottom: 30px;
+
+      @include onDesktop {
+        font-size: 42px;
+        margin-bottom: 50px;
+      }
+    }
+
+    &-car {
+      transform: rotate(4.46deg);
+      font-weight: 800;
+      font-size: 24px;
+      margin-bottom: 24px;
+
+      @include onDesktop {
+        font-size: 42px;
+        margin-bottom: 70px;
+      }
+    }
+  }
+
+  &__logo-arrow {
+    position: relative;
+  }
+
+  &__logo-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    transform: rotate(-1.61deg);
+    transition: transform 300ms;
+
+    &:hover {
+      transform: rotate(1.61deg);
+    }
+
+    @include onDesktop {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    &-logo {
+      @include onDesktop {
+        width: 275px;
+      }
+    }
+
+    &-arrow {
+      position: absolute;
+      top: 10px;
+
+      @include onDesktop {
+        width: 70px;
+      }
+    }
+
+    &-car {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translateX(-50%);
+      width: 320px;
+      height: 230px;
+
+      @include onDesktop {
+        width: 843px;
+        height: 513px;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 228px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:active {
+      background-color: transparent;
+      border: 1px solid #00b6ee;
+      color: #fff;
+    }
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+}
