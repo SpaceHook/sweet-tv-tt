@@ -1,7 +1,7 @@
 **Todo app**  
 Technologies used: JavaScript, TypeScript, Angular, HTML, CSS(SCSS), BEM
 
-**Preview -** [LINK](https://spacehook.github.io/sweet-tw-test/)  
+**Preview -** [LINK](https://spacehook.github.io/sweet-tv-tt/)  
 
 # Getting Started  
 1. Clone repository on your computer
