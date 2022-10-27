@@ -196,7 +196,7 @@
 
     &-img {
       &-car {
-        background: url("/assets/images/second-section-car.png");
+        background: url("../../assets/images/second-section-car.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -205,7 +205,7 @@
         transform: translateY(25%);
 
         @include onDesktop {
-          background: url("/assets/images/second-section-car-desktop.png");
+          background: url("../../assets/images/second-section-car-desktop.png");
           background-repeat: no-repeat;
           background-position: center;
           transform: none;
@@ -229,7 +229,7 @@
     }
 
     &-people {
-      background: url("/assets/images/second-section-people.png");
+      background: url("../../assets/images/second-section-people.png");
       background-position: center;
       background-repeat: no-repeat;
       height: 382px;
@@ -237,7 +237,7 @@
       margin-bottom: 42px;
 
       @include onDesktop {
-        background: url("/assets/images/second-section-people-desktop.png");
+        background: url("../../assets/images/second-section-people-desktop.png");
         background-repeat: no-repeat;
         background-position: center;
         transform: none;
@@ -562,7 +562,7 @@
     flex-direction: column;
     align-items: center;
     height: 564px;
-    background: url("/assets/images/fives-section-background.png");
+    background: url("../../assets/images/fives-section-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
